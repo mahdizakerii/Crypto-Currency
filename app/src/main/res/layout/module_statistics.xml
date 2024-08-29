@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="14dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="14dp"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/CoinBitText.BodyAlternate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Statistics" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_rounded_all"
+        android:padding="14dp">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="192dp" />
+
+        <TextView
+            android:id="@+id/txtOpenAmount"
+            style="@style/CoinBitText.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$155.03"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvOpenWebsite"
+            style="@style/CoinBitText.TitleAlternate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="open"
+            app:layout_constraintStart_toStartOf="@+id/txtOpenAmount"
+            app:layout_constraintTop_toBottomOf="@+id/txtOpenAmount" />
+
+        <TextView
+            android:id="@+id/txtTodayHighAmount"
+            style="@style/CoinBitText.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="$160.14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpenWebsite" />
+
+        <TextView
+            android:id="@+id/tvOpenTwitter"
+            style="@style/CoinBitText.TitleAlternate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's High"
+            app:layout_constraintStart_toStartOf="@+id/txtTodayHighAmount"
+            app:layout_constraintTop_toBottomOf="@+id/txtTodayHighAmount" />
+
+        <TextView
+            android:id="@+id/txtTodayLowAmount"
+            style="@style/CoinBitText.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="$18046"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpenTwitter" />
+
+        <TextView
+            style="@style/CoinBitText.TitleAlternate"
+            android:id="@+id/tvOpenReddit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's Low"
+            app:layout_constraintStart_toStartOf="@+id/txtTodayLowAmount"
+            app:layout_constraintTop_toBottomOf="@+id/txtTodayLowAmount" />
+
+        <TextView
+            style="@style/CoinBitText.Body1"
+            android:id="@+id/txtChangeTodayAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="$150.13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpenReddit" />
+
+        <TextView
+            style="@style/CoinBitText.TitleAlternate"
+            android:id="@+id/tvOpenGithub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Today's"
+            app:layout_constraintStart_toStartOf="@+id/txtChangeTodayAmount"
+            app:layout_constraintTop_toBottomOf="@+id/txtChangeTodayAmount" />
+
+        <TextView
+            style="@style/CoinBitText.Body1"
+            android:id="@+id/txtAlgorithm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$12M"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvVolumeAmount"
+            style="@style/CoinBitText.TitleAlternate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Algorithm"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/txtAlgorithm" />
+
+        <TextView
+          style="@style/CoinBitText.Body1"
+            android:id="@+id/txtTotalVolume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="27M"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/tvVolumeAmount" />
+
+        <TextView
+            style="@style/CoinBitText.TitleAlternate"
+            android:id="@+id/tvAverageVolumeAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Totla Volume"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/txtTotalVolume" />
+
+        <TextView
+            style="@style/CoinBitText.Body1"
+            android:id="@+id/txtMarketCapAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="$645.32B"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/tvAverageVolumeAmount" />
+
+        <TextView
+            style="@style/CoinBitText.TitleAlternate"
+            android:id="@+id/tvMarketCapAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Market Cap"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/txtMarketCapAmount" />
+
+        <TextView
+            style="@style/CoinBitText.Body1"
+            android:id="@+id/txtSupplyAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="18.42"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/tvMarketCapAmount" />
+
+        <TextView
+            style="@style/CoinBitText.TitleAlternate"
+            android:id="@+id/tvSupplyAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supply"
+            app:layout_constraintStart_toStartOf="@+id/txtSupplyAmount"
+            app:layout_constraintTop_toBottomOf="@+id/txtSupplyAmount" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
